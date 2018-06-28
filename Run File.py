@@ -52,10 +52,11 @@ for each_list in split_list2:
     for idx, each_word in enumerate(current_list):
         singular = p.singular_noun(each_word) 
         if singular == False:
-            current_list[idx] = each_word
+            current_list[idx] = each_word.lower()
         elif singular != False:
-            current_list[idx] = singular
+            current_list[idx] = singular.lower()
     split_list3.append(current_list)
+    
 
 # Into a hash   
 hash_table = {}
@@ -69,5 +70,6 @@ for idx, current_list in enumerate(split_list3):
             hash_table[current_word][idx].update([current_word])
         elif current_word in hash_table:
             hash_table[current_word][idx].update([current_word])
+
 
 
