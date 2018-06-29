@@ -6,7 +6,7 @@ The hash-table's purpose is to count the number of times that a word appears in 
 
 The repository contains 3 relevant files:
 - TextCollect.py
-    - This contains the class TextCollect() which contains methods that are used. Tags in the file e.g. '</p>' that mark the documents are removed. Punctuation is also removed by removing all non alphabetical or numerical values. Finally, words are also singularised and lower-cased to avoid multiple counts for similar words, e.g. 'cow', 'cows'.
+    - This contains the class TextCollect() which contains methods that are used. Tags in the file e.g. '\</p>' that mark the documents are removed. Punctuation is also removed by removing all non alphabetical or numerical values. Finally, words are also singularised and lower-cased to avoid multiple counts for similar words, e.g. 'cow', 'cows'.
 - txt-for-assignment-data-science.txt
     - This contains the raw semi-structured data.
 - Text Collection - Demo and Visualisation.ipynb
